@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_cards",
+  "info": {
+    "displayName": "Card",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleUrl": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "publishedOn": {
+      "type": "date"
+    },
+    "readMoreUrl": {
+      "type": "string"
+    }
+  }
+}
