@@ -423,6 +423,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
         'shared.rich-text',
         'shared.slider',
         'shared.card',
+        'shared.card-set',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_card_sets",
+  "info": {
+    "displayName": "Card Set",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.card"
+    }
+  }
+}

@@ -71,7 +71,8 @@
         "shared.quote",
         "shared.rich-text",
         "shared.slider",
-        "shared.card"
+        "shared.card",
+        "shared.card-set"
       ],
       "pluginOptions": {
         "i18n": {

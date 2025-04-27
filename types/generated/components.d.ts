@@ -16,6 +16,17 @@ export interface SharedCard extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCardSet extends Struct.ComponentSchema {
+  collectionName: 'components_shared_card_sets';
+  info: {
+    displayName: 'Card Set';
+    icon: 'dashboard';
+  };
+  attributes: {
+    Card: Schema.Attribute.Component<'shared.card', true>;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -82,6 +93,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.card': SharedCard;
+      'shared.card-set': SharedCardSet;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
