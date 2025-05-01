@@ -79,6 +79,9 @@
           "localized": true
         }
       }
+    },
+    "locales": {
+      "type": "json"
     }
   }
 }
