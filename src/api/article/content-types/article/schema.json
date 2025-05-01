@@ -105,12 +105,21 @@
       }
     },
     "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
       ],
-      "type": "media",
-      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tagList": {
+      "type": "json",
       "pluginOptions": {
         "i18n": {
           "localized": true
