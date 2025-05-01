@@ -451,7 +451,6 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
         maxLength: 80;
       }>;
     locale: Schema.Attribute.String;
-    locales: Schema.Attribute.JSON;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::article.article'
