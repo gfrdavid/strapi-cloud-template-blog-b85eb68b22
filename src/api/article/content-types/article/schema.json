@@ -79,6 +79,15 @@
           "localized": true
         }
       }
+    },
+    "metaTagTitle": {
+      "type": "string"
+    },
+    "metaTagDescription": {
+      "type": "string"
+    },
+    "gfrComponent": {
+      "type": "string"
     }
   }
 }
