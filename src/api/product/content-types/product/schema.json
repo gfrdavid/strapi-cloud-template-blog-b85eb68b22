@@ -1,11 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "products",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "Article",
-    "description": "Create your blog content"
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,42 +16,6 @@
     }
   },
   "attributes": {
-    "title": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "description": {
-      "type": "text",
-      "maxLength": 80,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "cover": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "metaTagTitle": {
       "type": "string",
       "pluginOptions": {
@@ -68,7 +32,7 @@
         }
       }
     },
-    "gfrComponent": {
+    "slug": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -76,27 +40,14 @@
         }
       }
     },
-    "bannerImage": {
+    "cover": {
       "type": "media",
       "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "tagList": {
-      "type": "json",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      ]
     },
     "dropdownTitle": {
       "type": "string",
@@ -106,16 +57,47 @@
         }
       }
     },
-    "body": {
-      "type": "richtext",
+    "title": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "articleDate": {
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "productDate": {
       "type": "date"
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "gfrComponent": {
+      "type": "string"
+    },
+    "tagList": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
