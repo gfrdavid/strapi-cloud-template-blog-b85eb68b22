@@ -86,7 +86,12 @@
       ]
     },
     "body": {
-      "type": "richtext"
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "gfrComponent": {
       "type": "string"
