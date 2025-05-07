@@ -592,6 +592,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiLeiArticleLeiArticle extends Struct.CollectionTypeSchema {
   collectionName: 'lei_articles';
   info: {
+    description: '';
     displayName: 'Lei.dk - Articles';
     pluralName: 'lei-articles';
     singularName: 'lei-article';
@@ -607,7 +608,7 @@ export interface ApiLeiArticleLeiArticle extends Struct.CollectionTypeSchema {
   attributes: {
     articleDate: Schema.Attribute.Date;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
-    body: Schema.Attribute.Blocks &
+    body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
