@@ -442,9 +442,6 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
         i18n: {
           localized: true;
         };
-      }> &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 80;
       }>;
     dropdownTitle: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
