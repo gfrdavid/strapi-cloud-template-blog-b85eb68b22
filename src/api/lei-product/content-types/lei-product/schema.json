@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lei-product",
     "pluralName": "lei-products",
-    "displayName": "Lei.dk - Product"
+    "displayName": "Lei.dk - Product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,12 +33,13 @@
       }
     },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "dropdownTitle": {
       "type": "string",
@@ -71,12 +73,13 @@
       "type": "date"
     },
     "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "body": {
       "type": "richtext",
@@ -87,7 +90,8 @@
       }
     },
     "gfrComponent": {
-      "type": "string"
+      "type": "string",
+      "default": "Product"
     },
     "tagList": {
       "type": "json"

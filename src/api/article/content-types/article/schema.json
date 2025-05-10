@@ -73,7 +73,8 @@
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "default": "Article"
     },
     "bannerImage": {
       "type": "media",

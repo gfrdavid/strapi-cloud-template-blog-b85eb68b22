@@ -94,7 +94,8 @@
       }
     },
     "gfrComponent": {
-      "type": "string"
+      "type": "string",
+      "default": "Product"
     },
     "tagList": {
       "type": "json",

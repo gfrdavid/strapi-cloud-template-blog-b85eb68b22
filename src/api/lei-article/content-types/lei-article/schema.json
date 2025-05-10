@@ -82,7 +82,8 @@
       ]
     },
     "gfrComponent": {
-      "type": "string"
+      "type": "string",
+      "default": "Article"
     },
     "tagList": {
       "type": "json"
