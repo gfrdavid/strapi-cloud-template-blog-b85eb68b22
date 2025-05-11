@@ -432,7 +432,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::article.article'
     >;
-    metaTagDescription: Schema.Attribute.String &
+    metaTagDescription: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -544,7 +544,7 @@ export interface ApiLeiArticleLeiArticle extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::lei-article.lei-article'
     >;
-    metaTagDescription: Schema.Attribute.String &
+    metaTagDescription: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -618,7 +618,7 @@ export interface ApiLeiProductLeiProduct extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::lei-product.lei-product'
     >;
-    metaTagDescription: Schema.Attribute.String &
+    metaTagDescription: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -693,7 +693,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::product.product'
     >;
-    metaTagDescription: Schema.Attribute.String &
+    metaTagDescription: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
