@@ -90,7 +90,7 @@ export interface SharedSlider extends Struct.ComponentSchema {
 }
 
 declare module '@strapi/strapi' {
-  export module Public {
+  export namespace Public {
     export interface ComponentSchemas {
       'shared.card': SharedCard;
       'shared.card-set': SharedCardSet;
