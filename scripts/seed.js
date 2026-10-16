@@ -268,6 +268,12 @@ async function main() {
   process.exit(0);
 }
 
+// The demo import adds sample articles, authors and uploads; never run it against production
+if (process.env.NODE_ENV === 'production') {
+  console.error('Refusing to run the demo seed with NODE_ENV=production.');
+  process.exit(1);
+}
+
 main().catch((error) => {
   console.error(error);
   process.exit(1);
