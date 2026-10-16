@@ -627,6 +627,12 @@ export interface ApiLeiArticleLeiArticle extends Struct.CollectionTypeSchema {
   };
   attributes: {
     articleDate: Schema.Attribute.Date;
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
@@ -701,6 +707,12 @@ export interface ApiLeiProductLeiProduct extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
@@ -778,6 +790,12 @@ export interface ApiLeinumberUkArticleLeinumberUkArticle
   };
   attributes: {
     articleDate: Schema.Attribute.Date;
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
@@ -853,6 +871,12 @@ export interface ApiLeinumberUkProductLeinumberUkProduct
     };
   };
   attributes: {
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
@@ -930,6 +954,12 @@ export interface ApiLeinummerSeArticleLeinummerSeArticle
   };
   attributes: {
     articleDate: Schema.Attribute.Date;
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
@@ -1005,6 +1035,12 @@ export interface ApiLeinummerSeProductLeinummerSeProduct
     };
   };
   attributes: {
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
@@ -1082,6 +1118,12 @@ export interface ApiNoGlobalfinregArticleNoGlobalfinregArticle
   };
   attributes: {
     articleDate: Schema.Attribute.Date;
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
@@ -1157,6 +1199,12 @@ export interface ApiNoGlobalfinregProductNoGlobalfinregProduct
     };
   };
   attributes: {
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
@@ -1234,6 +1282,12 @@ export interface ApiNumeroleiFrArticleNumeroleiFrArticle
   };
   attributes: {
     articleDate: Schema.Attribute.Date;
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{
@@ -1309,6 +1363,12 @@ export interface ApiNumeroleiFrProductNumeroleiFrProduct
     };
   };
   attributes: {
+    author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     bannerImage: Schema.Attribute.Media<'images' | 'files'>;
     body: Schema.Attribute.RichText &
       Schema.Attribute.SetPluginOptions<{

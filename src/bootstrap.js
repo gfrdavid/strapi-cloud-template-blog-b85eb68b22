@@ -269,6 +269,37 @@ async function main() {
 }
 
 
+// The website reads article authors through the public API, so the Public role
+// needs read access to Author. Runs on every start and only adds what's missing,
+// so it doesn't depend on a manual click in Settings → Roles → Public.
+async function grantPublicAuthorRead() {
+  const publicRole = await strapi.query('plugin::users-permissions.role').findOne({
+    where: { type: 'public' },
+  });
+  if (!publicRole) {
+    return;
+  }
+
+  for (const action of ['find', 'findOne']) {
+    const uid = `api::author.author.${action}`;
+    const existing = await strapi.query('plugin::users-permissions.permission').findOne({
+      where: { action: uid, role: publicRole.id },
+    });
+    if (!existing) {
+      await strapi.query('plugin::users-permissions.permission').create({
+        data: { action: uid, role: publicRole.id },
+      });
+      strapi.log.info(`Granted Public role ${uid}`);
+    }
+  }
+}
+
 module.exports = async () => {
-  await seedExampleApp();
+  // The template's demo import (sample articles, authors, uploads and Public
+  // permissions) must never run against a real database. It only runs when
+  // explicitly requested with SEED_DEMO=true, outside production.
+  if (process.env.SEED_DEMO === 'true' && process.env.NODE_ENV !== 'production') {
+    await seedExampleApp();
+  }
+  await grantPublicAuthorRead();
 };
